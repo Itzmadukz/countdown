@@ -12,7 +12,7 @@ export default function TimerChallenger({ title, targetTime }) {
     function handleStart() {
         timer.current = setTimeout(() => {
             setTimerExpired(true)
-            dialogue.current.showmodal()
+            dialogue.current.open()
         }, targetTime * 1000)
         setTimerStarted(true)
     }
